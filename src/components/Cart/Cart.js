@@ -19,7 +19,7 @@ export default class Cart extends Component { //export the Cart component
                                     <Title name="your" title="cart" /> {/* insert the title component here and pass in values for the name and title properties */}
                                     <CartColumns/>
                                     <CartList value={value}/> {/*assign the entire value object to the property value so that the object can be used in the CartList component */}
-                                    <CartTotals value={value}/> {/*same as above except with the CartTotals component */}
+                                    <CartTotals value={value} history={this.props.history} /> {/*same as above except with the CartTotals component */}
                                 </React.Fragment>
                             );
                         } else {
